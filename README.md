@@ -51,3 +51,16 @@ Provided by **Lodash**
 | `truncate`   | options={} | Truncates string if it's longer than the given maximum string length. The last characters of the truncated string are replaced with the omission string which defaults to "...". (info)[https://lodash.com/docs/4.17.15#truncate]
 | `upperCase`   | _none_ | Converts string, as space separated words, to upper case.
 | `upperFirst`   | _none_ | Converts the first character of string to upper case.
+
+### Numeric filters
+Provided by **numeral** 
+> More info http://numeraljs.com/ 
+
+| **rule**   | **parameters**| **description** |
+|--------------|------------   | --- |
+| `currency`   | _none_ | Shows currency format.
+| `percentage`   | _none_ | Shows as percentage format, for example 0.45 shows as 45%.
+| `numeral`   | format | Use any NumeralJS format.
+
+### Examples
+https://cuatromedios.github.io/quasar-app-extension-nequ-components/#/filters

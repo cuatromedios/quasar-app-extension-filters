@@ -1,4 +1,5 @@
 import _ from '../vendor/lodash.custom'
+import numeral from 'numeral'
 
 export default ({ Vue }) => {
   Vue.filter('camelCase', function (value) {
@@ -57,5 +58,16 @@ export default ({ Vue }) => {
   })
   Vue.filter('upperFirst', function (value) {
     return _.upperFirst(value)
+  })
+
+  // Numerals
+  Vue.filter('currency', function (value) {
+    return numeral(value).format('$0,0.00')
+  })
+  Vue.filter('percentage', function (value) {
+    return numeral(value).format('0,0%')
+  })
+  Vue.filter('numeral', function (value, format) {
+    return numeral(value).format(format)
   })
 }

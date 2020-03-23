@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-filters",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Quasar App Extension to expose common Vue filters, like currency, percentage, capitalize and other common numeric and text filters",
   "author": "Ramses <ramses@cuatromedios.com>",
   "license": "MIT",
