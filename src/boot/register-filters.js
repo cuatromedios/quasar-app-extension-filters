@@ -1,5 +1,6 @@
 import _ from '../vendor/lodash.custom'
 import numeral from 'numeral'
+import moment from 'moment'
 
 export default ({ Vue }) => {
   Vue.filter('camelCase', function (value) {
@@ -60,6 +61,25 @@ export default ({ Vue }) => {
     return _.upperFirst(value)
   })
 
+  numeral.register('locale', 'nq', {
+    delimiters: {
+      thousands: process.env.THOUSANDS_DELIMETER,
+      decimal: process.env.DECIMAL_DELIMETER
+    },
+    abbreviations: {
+      thousand: 'k',
+      million: 'm',
+      billion: 'b',
+      trillion: 't'
+    },
+    ordinal : function (number) {
+      return number === 1 ? 'º' : 'º';
+    },
+    currency: {
+      symbol: process.env.CURRENCY_SYMBOL
+    }
+  })
+  numeral.locale('nq')
   // Numerals
   Vue.filter('currency', function (value) {
     return numeral(value).format('$0,0.00')
@@ -69,5 +89,10 @@ export default ({ Vue }) => {
   })
   Vue.filter('numeral', function (value, format) {
     return numeral(value).format(format)
+  })
+
+  moment.locale(process.env.MOMENT_LOCALE);
+  Vue.filter('moment', function (value, format) {
+    return moment(value).format(format)
   })
 }

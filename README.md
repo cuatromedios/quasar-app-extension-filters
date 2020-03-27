@@ -12,7 +12,7 @@ Quasar CLI will retrieve it from NPM and install the extension.
 
 ### Prompts
 
-> Currency.
+> Numeral thousands, and decimal delimeters, currency symbol and moment locale.
 
 ## Uninstall
 ```bash
@@ -61,6 +61,10 @@ Provided by **numeral**
 | `currency`   | _none_ | Shows currency format.
 | `percentage`   | _none_ | Shows as percentage format, for example 0.45 shows as 45%.
 | `numeral`   | format | Use any NumeralJS format.
+
+### Date filters
+
+> Anu momentjs filter
 
 ### Examples
 https://cuatromedios.github.io/quasar-app-extension-nequ-components/#/filters

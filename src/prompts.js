@@ -42,7 +42,7 @@
 module.exports = function () {
   return [
     {
-      name: 'thousandsSeparator',
+      name: 'thousandsDelimeter',
       type: 'string',
       required: true,
       message: 'Thousands separator',
@@ -56,11 +56,18 @@ module.exports = function () {
       default: '$'
     },
     {
-      name: 'currencyDecimals',
-      type: 'number',
+      name: 'decimalDelimeter',
+      type: 'string',
       required: true,
-      message: 'Currency decimals',
-      default: 2
+      message: 'Decimal separator',
+      default: '.'
+    },
+    {
+      name: 'momentLocale',
+      type: 'string',
+      required: true,
+      message: 'Moment locale',
+      default: 'en'
     }
   ]
 }
