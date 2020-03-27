@@ -30,7 +30,7 @@ The extension will add common filters using a Quasar Boot file. Use them in your
 Provided by **Lodash** 
 > Descriptions taken from https://lodash.com/docs/4.17.15 
 
-| **rule**   | **parameters**| **description** |
+| **filter**   | **parameters**| **description** |
 |--------------|------------   | --- |
 | `camelCase`   | _none_ | Converts string to camelCase.
 | `capitalize`   | _none_ | Converts the first character of string to upper case and the remaining to lower case.
@@ -53,18 +53,22 @@ Provided by **Lodash**
 | `upperFirst`   | _none_ | Converts the first character of string to upper case.
 
 ### Numeric filters
-Provided by **numeral** 
-> More info http://numeraljs.com/ 
+Provided by **NumeralJS** 
+> More info https://numeraljs.com/ 
 
-| **rule**   | **parameters**| **description** |
+| **filter**   | **parameters**| **description** |
 |--------------|------------   | --- |
 | `currency`   | _none_ | Shows currency format.
 | `percentage`   | _none_ | Shows as percentage format, for example 0.45 shows as 45%.
 | `numeral`   | format | Use any NumeralJS format.
 
 ### Date filters
+Provided by **MomentJS** 
+> More info https://momentjs.com/ 
 
-> Anu momentjs filter
+| **filter**   | **parameters**| **description** |
+|--------------|------------   | --- |
+| `moment`   | format | Use any MomentJS format.
 
-### Examples
+### Demo
 https://cuatromedios.github.io/quasar-app-extension-nequ-components/#/filters
