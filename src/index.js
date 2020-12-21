@@ -13,16 +13,16 @@ function extendConf (api, conf) {
     conf.build.env = {}
   }
   if (api.prompts.thousandsDelimeter) {
-    conf.build.env['THOUSANDS_DELIMETER'] = `"${api.prompts.thousandsDelimeter}"`
+    conf.build.env['THOUSANDS_DELIMETER'] = `${api.prompts.thousandsDelimeter}`
   }
   if (api.prompts.currencySymbol) {
-    conf.build.env['CURRENCY_SYMBOL'] = `"${api.prompts.currencySymbol}"`
+    conf.build.env['CURRENCY_SYMBOL'] = `${api.prompts.currencySymbol}`
   }
   if (api.prompts.decimalDelimeter) {
-    conf.build.env['DECIMAL_DELIMETER'] = `"${api.prompts.decimalDelimeter}"`
+    conf.build.env['DECIMAL_DELIMETER'] = `${api.prompts.decimalDelimeter}`
   }
   if (api.prompts.momentLocale) {
-    conf.build.env['MOMENT_LOCALE'] = `"${api.prompts.momentLocale}"`
+    conf.build.env['MOMENT_LOCALE'] = `${api.prompts.momentLocale}`
   }
 }
 
